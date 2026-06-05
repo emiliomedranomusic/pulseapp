@@ -15,13 +15,16 @@ interface AppNavProps {
   profile: Profile | null;
   streak?: number;
   hideLinks?: boolean;
+  hideOnMobile?: boolean;
 }
 
-export function AppNav({ profile, streak, hideLinks }: AppNavProps) {
+export function AppNav({ profile, streak, hideLinks, hideOnMobile }: AppNavProps) {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-surface/80 backdrop-blur-md soft-shadow">
+    <header
+      className={`sticky top-0 z-50 bg-surface/80 backdrop-blur-md soft-shadow ${hideOnMobile ? "hidden md:block" : ""}`}
+    >
       <div className="mx-auto flex h-16 w-full max-w-content items-center justify-between px-margin-mobile py-3 md:h-20 md:px-margin-desktop">
         <Link href={profile?.name ? "/today" : "/"} className="font-headline-md text-headline-md text-primary tracking-tight">
           Pulse

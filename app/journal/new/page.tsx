@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { Suspense, useEffect, useState } from "react";
 import { AppShell } from "@/components/AppShell";
 import { CharacterSprite } from "@/components/CharacterSprite";
 import { MoodPicker } from "@/components/MoodPicker";
@@ -13,21 +13,41 @@ import { createJournalEntry } from "@/lib/db";
 import { JOURNAL_PROMPTS } from "@/lib/journalPrompts";
 import type { MoodSlug } from "@/lib/moods";
 
-export default function JournalNewPage() {
+function JournalNewForm() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const moodMode = searchParams.get("mode") === "mood";
+  const promptRandom = searchParams.get("prompt") === "random";
+
   const [mood, setMood] = useState<MoodSlug | null>(null);
   const [note, setNote] = useState("");
+  const [showTextarea, setShowTextarea] = useState(!moodMode);
   const [photoPreview, setPhotoPreview] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [queryApplied, setQueryApplied] = useState(false);
+
+  useEffect(() => {
+    if (queryApplied) return;
+    if (promptRandom) {
+      const pick = JOURNAL_PROMPTS[Math.floor(Math.random() * JOURNAL_PROMPTS.length)];
+      setNote(pick);
+    }
+    if (moodMode) {
+      setShowTextarea(false);
+    }
+    setQueryApplied(true);
+  }, [promptRandom, moodMode, queryApplied]);
+
+  const canSave = Boolean(note.trim() || mood);
 
   return (
     <AppShell>
       {({ profile }) => (
         <main className="mx-auto grid w-full max-w-content gap-stack-lg px-margin-mobile py-stack-md md:grid-cols-2 md:px-margin-desktop md:py-stack-lg">
           <section className="flex flex-col items-center justify-center gap-stack-md text-center md:items-start md:text-left">
-            <CharacterSprite state="content" />
-            <h1 className="font-display text-headline-lg-mobile md:text-display text-on-surface">
+            <CharacterSprite state="content" size="large" />
+            <h1 className="font-display text-headline-lg-mobile text-on-surface md:text-display">
               Anything on your mind?
             </h1>
             <p className="max-w-sm font-body-lg text-body-lg text-on-surface-variant">
@@ -42,18 +62,28 @@ export default function JournalNewPage() {
               label="HOW ARE YOU FEELING?"
             />
 
-            <div>
-              <textarea
-                value={note}
-                onChange={(e) => setNote(e.target.value)}
-                placeholder="Start typing here…"
-                rows={8}
-                className="w-full resize-none rounded-[20px] border-2 border-outline-variant/50 bg-surface px-6 py-4 font-body-md text-on-surface focus:border-primary-container focus:outline-none focus:ring-4 focus:ring-primary-container/15"
-              />
-              <p className="mt-2 text-right font-label-md text-label-md text-on-surface-variant">
-                {note.length} characters
-              </p>
-            </div>
+            {showTextarea ? (
+              <div>
+                <textarea
+                  value={note}
+                  onChange={(e) => setNote(e.target.value)}
+                  placeholder="Start typing here…"
+                  rows={8}
+                  className="w-full resize-none rounded-[20px] border-2 border-outline-variant/50 bg-surface px-6 py-4 font-body-md text-on-surface focus:border-primary-container focus:outline-none focus:ring-4 focus:ring-primary-container/15"
+                />
+                <p className="mt-2 text-right font-label-md text-label-md text-on-surface-variant">
+                  {note.length} characters
+                </p>
+              </div>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setShowTextarea(true)}
+                className="w-full rounded-[20px] border-2 border-dashed border-outline-variant/40 px-6 py-8 font-body-md text-on-surface-variant transition-colors hover:border-primary-container/50 hover:bg-surface-container-low"
+              >
+                Tap to add a note (optional)
+              </button>
+            )}
 
             <div className="flex flex-wrap items-center justify-between gap-3">
               <label className="cursor-pointer rounded-full bg-surface-container px-4 py-2 font-label-lg text-secondary hover:bg-secondary-container">
@@ -74,13 +104,13 @@ export default function JournalNewPage() {
                 Skip
               </Link>
               <PrimaryButton
-                disabled={saving || !note.trim()}
+                disabled={saving || !canSave}
                 onClick={async () => {
                   setSaving(true);
                   setError(null);
                   try {
                     await createJournalEntry(profile.id, {
-                      note: note.trim(),
+                      note: note.trim() || "Quick mood log",
                       mood: mood ?? undefined,
                       photoUrl: photoPreview,
                       entryType: "reflection",
@@ -114,7 +144,10 @@ export default function JournalNewPage() {
                   <button
                     key={prompt}
                     type="button"
-                    onClick={() => setNote((n) => (n ? `${n}\n\n${prompt}` : prompt))}
+                    onClick={() => {
+                      setShowTextarea(true);
+                      setNote((n) => (n ? `${n}\n\n${prompt}` : prompt));
+                    }}
                     className="rounded-full bg-surface-container-high px-4 py-3 text-left font-body-md text-on-surface-variant transition-colors hover:bg-secondary-container/50"
                   >
                     {prompt}
@@ -126,5 +159,19 @@ export default function JournalNewPage() {
         </main>
       )}
     </AppShell>
+  );
+}
+
+export default function JournalNewPage() {
+  return (
+    <Suspense
+      fallback={
+        <main className="flex min-h-dvh items-center justify-center">
+          <p className="text-on-surface-variant">Loading…</p>
+        </main>
+      }
+    >
+      <JournalNewForm />
+    </Suspense>
   );
 }

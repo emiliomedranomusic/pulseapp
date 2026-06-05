@@ -11,9 +11,11 @@ import type { Profile } from "@/lib/types";
 interface AppShellProps {
   children: (ctx: { profile: Profile; refetch: () => Promise<void> }) => React.ReactNode;
   hideNavLinks?: boolean;
+  /** Journal mobile layout supplies its own header; desktop keeps AppNav. */
+  hideNavOnMobile?: boolean;
 }
 
-export function AppShell({ children, hideNavLinks }: AppShellProps) {
+export function AppShell({ children, hideNavLinks, hideNavOnMobile }: AppShellProps) {
   const { session, ready, error: authError, retry } = useAuth();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -64,7 +66,12 @@ export function AppShell({ children, hideNavLinks }: AppShellProps) {
 
   return (
     <>
-      <AppNav profile={profile} streak={streak} hideLinks={hideNavLinks} />
+      <AppNav
+        profile={profile}
+        streak={streak}
+        hideLinks={hideNavLinks}
+        hideOnMobile={hideNavOnMobile}
+      />
       {children({ profile, refetch })}
     </>
   );
