@@ -11,6 +11,7 @@ import {
   getMyEventRsvps,
   toggleEventRsvp,
 } from "@/lib/db";
+import { resolveCommunityEventImage } from "@/lib/communityImages";
 import { getMood } from "@/lib/moods";
 import type { CommunityEvent, Profile } from "@/lib/types";
 import type { MoodSlug } from "@/lib/moods";
@@ -234,10 +235,20 @@ function FeaturedCard({
   joined: boolean;
   onJoin: () => void;
 }) {
+  const imageSrc = resolveCommunityEventImage(event.title, event.image_url);
+
   return (
     <div className="relative h-[360px] overflow-hidden rounded-card soft-shadow md:h-[480px]">
-      {event.image_url ? (
-        <Image src={event.image_url} alt="" fill className="object-cover" unoptimized />
+      {imageSrc ? (
+        <Image
+          src={imageSrc}
+          alt=""
+          fill
+          priority
+          loading="eager"
+          className="object-cover"
+          unoptimized
+        />
       ) : (
         <div className="absolute inset-0 bg-surface-container" />
       )}
@@ -265,11 +276,13 @@ function EventCard({
   joined: boolean;
   onJoin: () => void;
 }) {
+  const imageSrc = resolveCommunityEventImage(event.title, event.image_url);
+
   return (
     <SoftCard className="space-y-3">
-      {event.image_url ? (
+      {imageSrc ? (
         <div className="relative -mx-stack-md -mt-stack-md mb-2 h-40 overflow-hidden rounded-t-card">
-          <Image src={event.image_url} alt="" fill className="object-cover" unoptimized />
+          <Image src={imageSrc} alt="" fill className="object-cover" unoptimized />
         </div>
       ) : null}
       <MoodVibeChip slug={event.mood_vibe} />

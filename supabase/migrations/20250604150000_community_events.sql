@@ -65,7 +65,7 @@ INSERT INTO public.community_events (
     now() + interval '1 day',
     'Wynwood Creative Hub, Miami',
     0.8,
-    'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
+    '/community/morning-coworking-matcha.png',
     24,
     true
   ),
@@ -77,7 +77,7 @@ INSERT INTO public.community_events (
     now() + interval '2 days',
     'Coconut Grove Studio, Miami',
     1.2,
-    'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80',
+    '/community/silent-meditation.png',
     12,
     false
   ),
@@ -89,7 +89,7 @@ INSERT INTO public.community_events (
     now() + interval '3 days',
     'South Beach Café, Miami',
     2.1,
-    'https://images.unsplash.com/photo-1495474472287-4d489bcfe4c0?w=800&q=80',
+    '/community/digital-nomad-coffee.png',
     18,
     false
   ),
@@ -101,7 +101,7 @@ INSERT INTO public.community_events (
     now() + interval '4 days',
     'Little Haiti Arts Loft, Miami',
     3.4,
-    'https://images.unsplash.com/photo-1460668267107-6a34936d36fb?w=800&q=80',
+    '/community/creative-flow-workshop.png',
     9,
     false
   ),
@@ -113,7 +113,7 @@ INSERT INTO public.community_events (
     now() + interval '5 days',
     'South Pointe Park, Miami Beach',
     4.0,
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
+    '/community/sunset-beach-walk.png',
     31,
     false
   ),
@@ -125,7 +125,7 @@ INSERT INTO public.community_events (
     now() + interval '6 days',
     'Bayfront Park, Miami',
     1.5,
-    'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80',
+    '/community/gentle-yoga-park.png',
     22,
     false
   ),
@@ -137,7 +137,7 @@ INSERT INTO public.community_events (
     now() + interval '7 days',
     'Coral Gables Library Room, Miami',
     2.8,
-    'https://images.unsplash.com/photo-1455390573462-506c258527c7?w=800&q=80',
+    '/community/gratitude-journaling.png',
     8,
     false
   ),
@@ -149,7 +149,7 @@ INSERT INTO public.community_events (
     now() + interval '8 days',
     'Brickell Riverwalk, Miami',
     1.0,
-    'https://images.unsplash.com/photo-1513364776144-609b932f000f?w=800&q=80',
+    '/community/neighborhood-sketch-sip.png',
     14,
     false
   );
