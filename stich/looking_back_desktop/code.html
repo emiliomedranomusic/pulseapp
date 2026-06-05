@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f3eaff",
+                    "surface-dim": "#dfd6ef",
+                    "secondary-fixed": "#e8ddff",
+                    "on-secondary-fixed-variant": "#4c3d77",
+                    "on-background": "#1e192b",
+                    "outline": "#89726b",
+                    "on-tertiary-fixed": "#002116",
+                    "outline-variant": "#dcc0b9",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#eee4fd",
+                    "secondary-fixed-dim": "#cebdff",
+                    "tertiary-fixed": "#c3ecd8",
+                    "surface-tint": "#9e4225",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#564782",
+                    "error": "#ba1a1a",
+                    "inverse-surface": "#332d40",
+                    "primary-fixed-dim": "#ffb59f",
+                    "on-primary-fixed": "#3a0a00",
+                    "inverse-primary": "#ffb59f",
+                    "secondary": "#645591",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#214638",
+                    "surface-container-highest": "#e8def8",
+                    "tertiary-fixed-dim": "#a7cfbc",
+                    "on-secondary-fixed": "#200f49",
+                    "primary-container": "#ff8c69",
+                    "primary-fixed": "#ffdbd1",
+                    "surface-variant": "#e8def8",
+                    "tertiary": "#416656",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#cbbafd",
+                    "primary": "#9e4225",
+                    "background": "#fdf7ff",
+                    "on-tertiary-fixed-variant": "#294e3f",
+                    "inverse-on-surface": "#f6eeff",
+                    "tertiary-container": "#8db4a2",
+                    "on-error": "#ffffff",
+                    "on-surface": "#1e192b",
+                    "surface-container-low": "#f8f1ff",
+                    "surface": "#fdf7ff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fdf7ff",
+                    "on-surface-variant": "#56423d",
+                    "on-primary-fixed-variant": "#7e2b10",
+                    "on-primary-container": "#752409"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "24px",
+                    "margin-desktop": "64px",
+                    "gutter": "20px",
+                    "stack-sm": "12px",
+                    "stack-md": "24px",
+                    "stack-lg": "48px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "body-md": ["Nunito Sans"],
+                    "body-lg": ["Nunito Sans"],
+                    "headline-md": ["Quicksand"],
+                    "headline-lg": ["Quicksand"],
+                    "display": ["Quicksand"],
+                    "label-md": ["Quicksand"],
+                    "headline-lg-mobile": ["Quicksand"],
+                    "label-lg": ["Quicksand"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "display": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #FFF8F0; /* Soft Peach override as requested */
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-card {
+            box-shadow: 0 20px 40px -15px rgba(100, 85, 145, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .soft-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 30px 50px -20px rgba(100, 85, 145, 0.12);
+        }
+    </style>
+</head>
+<body class="text-on-background">
+<!-- Header Navigation -->
+<nav class="sticky top-0 z-50 bg-surface/80 backdrop-blur-md shadow-[0_20px_40px_-15px_rgba(100,85,145,0.08)]">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-[1200px] mx-auto">
+<div class="flex items-center gap-2">
+<span class="text-headline-md font-headline-lg text-primary tracking-tight">Pulse</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium pb-1 hover:text-primary transition-colors duration-300" href="#">Today</a>
+<a class="text-on-surface-variant font-medium pb-1 hover:text-primary transition-colors duration-300" href="#">Community</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-300" href="#">Journal</a>
+<a class="text-on-surface-variant font-medium pb-1 hover:text-primary transition-colors duration-300" href="#">Profile</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer">local_fire_department</span>
+<div class="w-10 h-10 rounded-full bg-secondary-container overflow-hidden border-2 border-white">
+<img alt="User avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYkWt4w_HxppgWZ_CJAJjPgA1UFwR_jBPY0lR3FG2D-wrgw4OfkThaZ7uwWtMa6In-eJIOaEJ3EYc_pVEsbwh2MAUv1dW4NW9EYOiPh9-amJDgHaXZbzVOU5l-XBlMTn6jSDg5xu1mwt6Ke9N4KyulntBB6aBI8NxCE6-ksPOKyO7_A2sUwefd6xNvi5WaKrs0nJd2L9pWnOsyD4Qe7_H61484hjEEuW-lnksNNzY6cgdNpBK0ddq8_cjAltdVtoNmHzbt5WEShl8G"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="max-w-[1200px] mx-auto px-margin-desktop py-stack-lg">
+<!-- Page Header -->
+<header class="mb-stack-lg flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+<div>
+<h1 class="font-display text-display text-on-surface mb-2">Looking back</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Reflection is the gentle way to grow.</p>
+</div>
+<!-- Summary Area: Monthly Growth -->
+<div class="soft-card bg-surface-container-lowest p-stack-md rounded-lg flex items-center gap-6 border border-surface-container-high max-w-sm">
+<div class="relative w-16 h-16 flex items-center justify-center">
+<!-- Progress Hoop -->
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-high" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-tertiary" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="40" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<span class="absolute font-headline-md text-tertiary">12%</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-secondary uppercase tracking-widest">Monthly Growth</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-tight">You feel <span class="text-tertiary font-bold">12% more balanced</span> than last month.</p>
+</div>
+</div>
+</header>
+<!-- Filters / Secondary Nav -->
+<div class="flex gap-3 mb-stack-md overflow-x-auto pb-2 no-scrollbar">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg transition-transform active:scale-95">All Entries</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-label-lg hover:bg-surface-container-high transition-all">Milestones</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-label-lg hover:bg-surface-container-high transition-all">Gratitude</button>
+<button class="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-label-lg hover:bg-surface-container-high transition-all">Reflection</button>
+</div>
+<!-- Journal Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-stack-md">
+<!-- Entry Card 1 -->
+<div class="soft-card bg-white p-stack-md rounded-[28px] flex flex-col justify-between h-full border border-surface-container-low group cursor-pointer">
+<div>
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary">May 12, 2024</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1 group-hover:text-primary transition-colors">Evening Reflection</h3>
+</div>
+<div class="flex items-center gap-2 bg-secondary-container/30 px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-secondary text-[20px]">sentiment_dissatisfied</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">arrow_forward</span>
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">sentiment_satisfied</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4">
+                        Started the day feeling quite heavy and overwhelmed by the laundry list of tasks. After a short walk and focus on breathing, the tension started to lift. I realized most of the pressure was self-imposed.
+                    </p>
+</div>
+<div class="flex gap-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full font-label-md">Yoga</span>
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full font-label-md">Mindful</span>
+</div>
+</div>
+<!-- Entry Card 2 -->
+<div class="soft-card bg-white p-stack-md rounded-[28px] flex flex-col justify-between h-full border border-surface-container-low group cursor-pointer">
+<div>
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary">May 10, 2024</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1 group-hover:text-primary transition-colors">Morning Intentions</h3>
+</div>
+<div class="flex items-center gap-2 bg-secondary-container/30 px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-secondary text-[20px]">sentiment_neutral</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">arrow_forward</span>
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">sentiment_very_satisfied</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4">
+                        Woke up with a sense of calm. The coffee tasted better than usual. I'm focusing on "presence" today, not worrying about what happens at 3 PM when I'm still at 8 AM.
+                    </p>
+</div>
+<div class="flex gap-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full font-label-md">Nature</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1 rounded-full font-label-md">Quiet</span>
+</div>
+</div>
+<!-- Entry Card 3 -->
+<div class="soft-card bg-white p-stack-md rounded-[28px] flex flex-col justify-between h-full border border-surface-container-low group cursor-pointer">
+<div>
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary">May 08, 2024</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1 group-hover:text-primary transition-colors">Finding Balance</h3>
+</div>
+<div class="flex items-center gap-2 bg-secondary-container/30 px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-secondary text-[20px]">mood_bad</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">arrow_forward</span>
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">sentiment_neutral</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-4">
+                        Tough day at work today. Criticism felt personal and I struggled to shake it off. I did some journaling to decouple my identity from my output. Feeling slightly more neutral now.
+                    </p>
+</div>
+<div class="flex gap-2">
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full font-label-md">Self-care</span>
+</div>
+</div>
+<!-- Entry Card 4 - Image Accent -->
+<div class="soft-card bg-white p-stack-md rounded-[28px] flex flex-col md:flex-row gap-6 h-full border border-surface-container-low group cursor-pointer overflow-hidden">
+<div class="w-full md:w-40 h-40 md:h-full rounded-[20px] overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A serene landscape showing a sunrise over a calm lake with soft mist, using a soothing palette of warm oranges and soft purples. The lighting is low-key and ethereal, evoking a sense of peaceful morning meditation and gentle emotional transition. High-quality photographic style with a soft focus on the water ripples." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxkxAVqj5_JM5sF_9mlAJUqr7aqgTnb64dwmEea3DYiT9ou7nRAdQl49O6RwMrgIJbjEwXwlAL8_qr3rlA5iEdxOWXL8DHKpD1eDEoZv2GyvfaYPzkLSaGFwBMM3Mw6ApprIIdWVC-NFzJEmfz0jQqALQ4UDYRP7QKg5B6ZI_xa9Yn5tqBALOpDQMZWP2unoT5RpBspCaXHvllRzJBTP2IwrYWOLJBZWNWVNe1-qYxeg3_LK9DEGs__KRftuLZT__bOgYJLbWGdCgw"/>
+</div>
+<div class="flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary">May 05, 2024</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1 group-hover:text-primary transition-colors">A Golden Moment</h3>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                            The park was so quiet this morning. I watched the ducks for ten minutes and didn't check my phone once.
+                        </p>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">sentiment_satisfied</span>
+<span class="font-label-md text-secondary">Sustained Joy</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More Section -->
+<div class="mt-stack-lg flex justify-center">
+<button class="flex items-center gap-2 text-secondary font-headline-md hover:text-primary transition-colors group">
+                Show more memories
+                <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">keyboard_arrow_down</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-stack-lg">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-stack-lg max-w-[1200px] mx-auto border-t border-outline-variant/20">
+<div class="flex flex-col gap-2 mb-6 md:mb-0">
+<span class="text-label-lg font-headline-md text-secondary">Pulse</span>
+<p class="font-label-md text-label-md text-on-secondary-fixed-variant">© 2024 Pulse Wellness. Stay cozy.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant hover:text-primary transition-all opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant hover:text-primary transition-all opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant hover:text-primary transition-all opacity-80 hover:opacity-100" href="#">Support</a>
+</div>
+</div>
+</footer>
+<!-- Floating Action Button -->
+<button class="fixed bottom-10 right-10 w-16 h-16 bg-primary-container text-on-primary-container rounded-full shadow-xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-40 group">
+<span class="material-symbols-outlined text-[32px]">edit</span>
+<span class="absolute right-full mr-4 bg-white px-4 py-2 rounded-lg text-secondary font-label-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">New Entry</span>
+</button>
+<script>
+        // Micro-interaction for mood transition icons on hover
+        document.querySelectorAll('.soft-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const icon = card.querySelector('.material-symbols-outlined[style*="FILL: 1"]');
+                if (icon) {
+                    icon.style.transform = 'scale(1.2)';
+                    icon.style.transition = 'transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                }
+            });
+            card.addEventListener('mouseleave', () => {
+                const icon = card.querySelector('.material-symbols-outlined[style*="FILL: 1"]');
+                if (icon) {
+                    icon.style.transform = 'scale(1)';
+                }
+            });
+        });
+
+        // Simple smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>

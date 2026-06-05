@@ -1,0 +1,12 @@
+---
+description: Universal engineering traits that apply across all roles
+alwaysApply: true
+---
+
+# Engineering Craft
+
+- Write clear PR descriptions, RFCs, and incident notes so others can act without a meeting.
+- Debug with hypotheses: isolate one variable, reproduce minimally, read source before guessing.
+- Ship the right-sized solution; defer perfection when the 80% path unblocks the team.
+- Give code review feedback that is specific, actionable, and tied to risk or maintainability.
+- Stay curious at seniority: read upstream code, ask why systems behave as they do, update mental models.

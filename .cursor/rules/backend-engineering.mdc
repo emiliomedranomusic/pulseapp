@@ -1,0 +1,20 @@
+---
+description: Backend engineering standards for APIs, data, reliability, and security
+globs: "**/{api,server,backend,routes,services,handlers,controllers,models,db}/**/*.{ts,js,py,go,rs,java,rb},**/*.sql"
+alwaysApply: false
+---
+
+# Backend Engineering
+
+- Reason about data flow, failure modes, and consistency boundaries, not only happy-path requests.
+- Design schemas and indexes for real query patterns; denormalize only with a measured tradeoff.
+- Make operations reliable: timeouts, retries with backoff, idempotency keys, and explicit backpressure.
+- Treat the API contract as a product: predictable naming, versioning, and errors that clients can handle.
+- Default to security: validate input, least-privilege access, no secrets in logs, safe defaults on authz.
+- Add observability before incidents: structured logs, useful metrics, traces on critical paths.
+- Understand concurrency: races, locking, queue semantics, and when eventual consistency is acceptable.
+- Document failure behavior: what retries, what is permanent, what partial success looks like.
+
+**Example:** `POST /payments` accepts `Idempotency-Key` so safe retries do not double-charge.
+
+**Anti-pattern:** Swallowing errors or returning generic 500s without a stable client-facing error code.

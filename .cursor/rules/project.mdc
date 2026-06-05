@@ -1,0 +1,22 @@
+---
+description: Core stack, conventions, and hackathon scope discipline for the Pulse burnout companion app.
+alwaysApply: true
+---
+
+# Project: Pulse — a Tamagotchi-style burnout companion
+
+## Stack (do not deviate)
+- Next.js (App Router) + TypeScript + Tailwind CSS
+- Supabase (Postgres + Anonymous Auth + RLS); client via `@supabase/supabase-js`
+- Deploy target: Vercel
+- Mobile-first — this is demoed on a phone-sized viewport
+
+## Conventions
+- Components in `/components`, data helpers in `/lib/db.ts`, Supabase client in `/lib/supabase.ts`
+- Strict TypeScript, no `any`. The app must always pass `next build`.
+- Tailwind only, no external UI kit. Env vars: NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY. Never hardcode keys.
+
+## Hackathon scope discipline (CRITICAL)
+- ~2.5 hours. Build the core daily check-in loop end-to-end FIRST, then polish.
+- Always keep the app in a runnable, demoable state after every change.
+- Prefer the simplest thing that demos. Do NOT add features outside the build prompt. Risky bits get a clear TODO stub, not a broken app.

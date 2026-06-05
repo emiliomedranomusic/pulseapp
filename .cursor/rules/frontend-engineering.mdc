@@ -1,0 +1,20 @@
+---
+description: Frontend engineering standards for UI, accessibility, and perceived performance
+globs: "**/*.{tsx,jsx,vue,svelte,astro,css,scss,html}"
+alwaysApply: false
+---
+
+# Frontend Engineering
+
+- Optimize for perceived performance and how the UI feels, not only whether it renders.
+- Treat accessibility as baseline: keyboard nav, focus order, ARIA where needed, sufficient contrast.
+- Understand the browser runtime: event loop, layout/reflow, hydration, bundling, network waterfalls.
+- Fill design gaps pragmatically when specs are incomplete; prefer consistent patterns over one-offs.
+- Notice visual and interaction quality: spacing, motion jank, loading states, empty and error states.
+- Guard Core Web Vitals: lazy-load below-fold media, split code, size images, avoid layout shift.
+- Choose state by scope: local UI state, URL state, server cache, global store only when justified.
+- Prefer semantic HTML and native controls before custom widgets; enhance, do not replace, platform behavior.
+
+**Example:** Skeleton + `loading="lazy"` on images instead of a blank layout shift on first paint.
+
+**Anti-pattern:** Global store for data that belongs in the server response or URL.

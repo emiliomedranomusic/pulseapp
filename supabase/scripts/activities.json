@@ -1,0 +1,2417 @@
+{
+  "categories": [
+    {
+      "slug": "breath_calm",
+      "name": "Breath & calm",
+      "description": "Breathing exercises and calming breath rituals",
+      "sort_order": 1
+    },
+    {
+      "slug": "meditation_mindfulness",
+      "name": "Meditation & mindfulness",
+      "description": "Grounding, meditation, and present-moment practices",
+      "sort_order": 2
+    },
+    {
+      "slug": "gentle_movement",
+      "name": "Gentle movement & stretch",
+      "description": "Low-intensity stretches and mobility",
+      "sort_order": 3
+    },
+    {
+      "slug": "walk_outdoors",
+      "name": "Walk & outdoors",
+      "description": "Outdoor and walking-based wellness",
+      "sort_order": 4
+    },
+    {
+      "slug": "cardio_kinetic",
+      "name": "Cardio & kinetic",
+      "description": "Higher-energy movement and cardio",
+      "sort_order": 5
+    },
+    {
+      "slug": "strength_mobility",
+      "name": "Strength & mobility",
+      "description": "Strength, resistance, and mobility work",
+      "sort_order": 6
+    },
+    {
+      "slug": "creative_expressive",
+      "name": "Creative & expressive",
+      "description": "Creative outlets and self-expression",
+      "sort_order": 7
+    },
+    {
+      "slug": "connection_care",
+      "name": "Connection & care",
+      "description": "Social connection and self-compassion",
+      "sort_order": 8
+    },
+    {
+      "slug": "rest_sensory",
+      "name": "Rest, sensory & routine",
+      "description": "Rest, sensory soothing, and routine rituals",
+      "sort_order": 9
+    }
+  ],
+  "moods": [
+    {
+      "slug": "low_tired",
+      "name": "Low / tired",
+      "description": "Drained, sleepy, or low energy",
+      "sort_order": 1
+    },
+    {
+      "slug": "anxious",
+      "name": "Anxious / tense",
+      "description": "Worried, on edge, or physically tight",
+      "sort_order": 2
+    },
+    {
+      "slug": "neutral",
+      "name": "Okay / neutral",
+      "description": "Steady or in-between",
+      "sort_order": 3
+    },
+    {
+      "slug": "good_content",
+      "name": "Good / content",
+      "description": "Relaxed, settled, or at ease",
+      "sort_order": 4
+    },
+    {
+      "slug": "awesome",
+      "name": "Awesome!",
+      "description": "Energized, joyful, or on top of the world",
+      "sort_order": 5
+    }
+  ],
+  "activities": [
+    {
+      "slug": "box-breathing",
+      "title": "Box breathing",
+      "description": "4 counts in, hold, out, hold.",
+      "category": "breath_calm",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "slug": "four-seven-eight-breath",
+      "title": "4-7-8 breath",
+      "description": "Inhale 4, hold 7, exhale 8.",
+      "category": "breath_calm",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "slug": "belly-breathing",
+      "title": "Belly breathing",
+      "description": "Hand on stomach, slow deep breaths.",
+      "category": "breath_calm",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "physiological-sigh",
+      "title": "Physiological sigh",
+      "description": "Double inhale through nose, long exhale through mouth.",
+      "category": "breath_calm",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 3,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "slug": "humming-breath",
+      "title": "Humming breath",
+      "description": "Hum on the exhale for 1 minute.",
+      "category": "breath_calm",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 3,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "alternate-nostril-breathing",
+      "title": "Alternate nostril breathing",
+      "description": "Gentle nasal breathing pattern.",
+      "category": "breath_calm",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "counted-breaths",
+      "title": "Counted breaths",
+      "description": "Count 10 slow breaths with eyes closed.",
+      "category": "breath_calm",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 4,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "cool-down-breath",
+      "title": "Cool-down breath",
+      "description": "Sip air through pursed lips, long exhale.",
+      "category": "breath_calm",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 3,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "morning-breath-ritual",
+      "title": "Morning breath ritual",
+      "description": "Three intentional breaths before getting up.",
+      "category": "breath_calm",
+      "duration_min_minutes": 1,
+      "duration_max_minutes": 2,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "evening-wind-down-breath",
+      "title": "Evening wind-down breath",
+      "description": "Five slow breaths in bed or on the couch.",
+      "category": "breath_calm",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 3,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "lions-breath",
+      "title": "Lion's breath",
+      "description": "Inhale, open mouth, stick out tongue, exhale with a ha.",
+      "category": "breath_calm",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 3,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "breath-with-phrase",
+      "title": "Breath with a phrase",
+      "description": "In: I am here. Out: I let go.",
+      "category": "breath_calm",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "paced-walking-breath",
+      "title": "Paced walking breath",
+      "description": "Match steps to inhale/exhale for 2 minutes.",
+      "category": "breath_calm",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "cool-cloth-breath",
+      "title": "Cool cloth + breath",
+      "description": "Cool water on wrists/face, then slow breathing.",
+      "category": "breath_calm",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "sound-bath-at-home",
+      "title": "Sound bath at home",
+      "description": "One calming track, eyes closed, just listening.",
+      "category": "breath_calm",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 15,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "body-scan",
+      "title": "Body scan",
+      "description": "Notice feet to head, no fixing.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 15,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "five-four-three-two-one",
+      "title": "5-4-3-2-1 grounding",
+      "description": "See, touch, hear, smell, taste (or skip taste).",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "loving-kindness",
+      "title": "Loving-kindness",
+      "description": "Wish yourself and someone else well.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "one-minute-stillness",
+      "title": "One-minute stillness",
+      "description": "Sit quietly, no goal.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 1,
+      "duration_max_minutes": 2,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "mindful-tea-or-water",
+      "title": "Mindful tea or water",
+      "description": "Sip slowly, notice temperature and taste.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "mindful-snack",
+      "title": "Mindful snack",
+      "description": "Eat one thing without screens.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "label-thoughts",
+      "title": "Label thoughts",
+      "description": "Planning, worrying \u2014 then return to breath.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "open-awareness",
+      "title": "Open awareness",
+      "description": "Let sounds and sensations come and go.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "gratitude-pause",
+      "title": "Gratitude pause",
+      "description": "Name three specific small things.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "future-self-note",
+      "title": "Future-self note",
+      "description": "One kind sentence to tomorrow's you.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "mindful-hand-wash",
+      "title": "Mindful hand wash",
+      "description": "Feel water, soap, temperature for 60 seconds.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 1,
+      "duration_max_minutes": 2,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "cloud-sky-watch",
+      "title": "Cloud or sky watch",
+      "description": "Look up for a few minutes.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "candle-light-focus",
+      "title": "Candle or light focus",
+      "description": "Soft gaze on one point.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "walking-meditation",
+      "title": "Walking meditation",
+      "description": "Slow steps, feel feet on ground.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 15,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "bedtime-body-check",
+      "title": "Bedtime body check",
+      "description": "Where am I holding tension? Soften one spot.",
+      "category": "meditation_mindfulness",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 8,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "neck-rolls",
+      "title": "Neck rolls",
+      "description": "Slow circles, both directions.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "shoulder-shrugs",
+      "title": "Shoulder shrugs",
+      "description": "Up, hold, release x10.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 3,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "cat-cow-stretch",
+      "title": "Cat-cow stretch",
+      "description": "On hands and knees or seated version.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "childs-pose",
+      "title": "Child's pose",
+      "description": "1-3 minutes, breathe into back.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "standing-forward-fold",
+      "title": "Standing forward fold",
+      "description": "Soft hang, bent knees OK.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "hip-circles",
+      "title": "Hip circles",
+      "description": "Standing or lying, loosen hips.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 4,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "wrist-finger-stretches",
+      "title": "Wrist and finger stretches",
+      "description": "Good after typing.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 4,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "ankle-rolls",
+      "title": "Ankle rolls",
+      "description": "Both feet, seated or standing.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 3,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 6
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "gentle-twist",
+      "title": "Gentle twist",
+      "description": "Seated or lying, both sides.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "wall-stretch",
+      "title": "Wall stretch",
+      "description": "Calves or chest against a wall.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "desk-yoga",
+      "title": "Desk yoga",
+      "description": "Five poses at your chair.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "sun-salutation-short",
+      "title": "Sun salutation (short)",
+      "description": "Three rounds, easy pace.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "balance-practice",
+      "title": "Balance practice",
+      "description": "One leg, 30 seconds each side.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "foam-roll",
+      "title": "Foam roll or tennis ball",
+      "description": "Calves, upper back, or glutes.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "progressive-muscle-relaxation",
+      "title": "Progressive muscle relaxation",
+      "description": "Tense and release each muscle group.",
+      "category": "gentle_movement",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 15,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "slug": "neighborhood-walk",
+      "title": "10-minute neighborhood walk",
+      "description": "No destination.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 15,
+      "energy_level": "medium",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "park-bench-sit",
+      "title": "Park bench sit",
+      "description": "Outside, no phone for 5 minutes.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "tree-plant-notice-walk",
+      "title": "Tree or plant notice walk",
+      "description": "Name five greens you see.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 15,
+      "energy_level": "low",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "sunlight-break",
+      "title": "Sunlight break",
+      "description": "Face the sun safely for 2 minutes.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "fresh-air-at-door",
+      "title": "Fresh air at the door",
+      "description": "Step outside, three deep breaths.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 1,
+      "duration_max_minutes": 3,
+      "energy_level": "low",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "barefoot-grass",
+      "title": "Barefoot grass",
+      "description": "Two minutes on grass or earth if safe.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "bird-nature-listen",
+      "title": "Bird or nature listen",
+      "description": "Stand still, count sounds.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "photo-walk",
+      "title": "Photo walk",
+      "description": "One photo of something beautiful, then put phone away.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 20,
+      "energy_level": "medium",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "stairs-climb-light",
+      "title": "Stairs climb",
+      "description": "One flight up and down, own pace.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "walk-and-call",
+      "title": "Walk and call",
+      "description": "Walk while talking to someone you like.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 20,
+      "energy_level": "medium",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "litter-pick-mini",
+      "title": "Litter pick mini",
+      "description": "One small bag on a short route.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 15,
+      "energy_level": "medium",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "garden-balcony-tending",
+      "title": "Garden or balcony tending",
+      "description": "Water, weed, or touch soil.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 20,
+      "energy_level": "low",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "evening-stroll",
+      "title": "Evening stroll",
+      "description": "Low light, calm pace before bed.",
+      "category": "walk_outdoors",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 20,
+      "energy_level": "low",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "brisk-walk",
+      "title": "Brisk 15-minute walk",
+      "description": "Slightly faster than usual.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 15,
+      "duration_max_minutes": 20,
+      "energy_level": "medium",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "dance-break",
+      "title": "Dance break",
+      "description": "One song, full body.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "high",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "jumping-jacks",
+      "title": "Jumping jacks",
+      "description": "30 seconds on, 30 off, repeat 3x.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "high",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "slug": "jump-rope",
+      "title": "Jump rope",
+      "description": "2-5 minutes or imaginary rope.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 5,
+      "energy_level": "high",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "stair-intervals",
+      "title": "Stair intervals",
+      "description": "Up fast, down slow, 5 rounds.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "high",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "slug": "bike-ride",
+      "title": "Bike ride",
+      "description": "Short loop around the block.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 15,
+      "duration_max_minutes": 30,
+      "energy_level": "high",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "swim-or-pool-dip",
+      "title": "Swim or pool dip",
+      "description": "Laps or float if you have access.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 15,
+      "duration_max_minutes": 30,
+      "energy_level": "high",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "gym-session-short",
+      "title": "Gym session (short)",
+      "description": "20 minutes: warm-up + one focus area.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 20,
+      "duration_max_minutes": 30,
+      "energy_level": "high",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "bodyweight-circuit",
+      "title": "Bodyweight circuit",
+      "description": "Squats, push-ups, plank \u2014 2 rounds.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 15,
+      "energy_level": "high",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "slug": "shadow-boxing",
+      "title": "Shadow boxing",
+      "description": "3 minutes, light punches, breathe.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "high",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "micro-hike",
+      "title": "Hike (micro)",
+      "description": "Trail or hill, 20-30 minutes.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 20,
+      "duration_max_minutes": 30,
+      "energy_level": "high",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "run-or-jog",
+      "title": "Run or jog",
+      "description": "Easy pace, run-walk OK.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 15,
+      "duration_max_minutes": 30,
+      "energy_level": "high",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "slug": "sports-play",
+      "title": "Sports play",
+      "description": "Shoot hoops, kick ball, frisbee \u2014 play, not performance.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 15,
+      "duration_max_minutes": 30,
+      "energy_level": "high",
+      "indoor": false,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "awesome",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "active-chores-burst",
+      "title": "Active chores burst",
+      "description": "Vacuum, mop, or yard work with energy.",
+      "category": "cardio_kinetic",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 20,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "plank-hold",
+      "title": "Plank hold",
+      "description": "20-40 seconds, 3 sets.",
+      "category": "strength_mobility",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "glute-bridges",
+      "title": "Glute bridges",
+      "description": "12 reps, 2 sets.",
+      "category": "strength_mobility",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 8,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "resistance-band-row",
+      "title": "Resistance band row",
+      "description": "Or towel row at home.",
+      "category": "strength_mobility",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "wall-sit",
+      "title": "Wall sit",
+      "description": "30-45 seconds.",
+      "category": "strength_mobility",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 4,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "farmer-walk",
+      "title": "Carry something heavy safely",
+      "description": "Groceries, water jugs \u2014 farmer's walk.",
+      "category": "strength_mobility",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "mobility-flow",
+      "title": "Mobility flow",
+      "description": "Hips, thoracic spine, ankles \u2014 8 minutes.",
+      "category": "strength_mobility",
+      "duration_min_minutes": 8,
+      "duration_max_minutes": 12,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "core-trio",
+      "title": "Core trio",
+      "description": "Dead bug, bird dog, side plank (modified OK).",
+      "category": "strength_mobility",
+      "duration_min_minutes": 8,
+      "duration_max_minutes": 12,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "stretch-after-effort",
+      "title": "Stretch after effort",
+      "description": "5 minutes post any movement.",
+      "category": "strength_mobility",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 8,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 6
+        }
+      ]
+    },
+    {
+      "slug": "free-write",
+      "title": "Free write",
+      "description": "5 minutes, no editing.",
+      "category": "creative_expressive",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "doodle-sketch",
+      "title": "Doodle or sketch",
+      "description": "Pen and paper, no judgment.",
+      "category": "creative_expressive",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 15,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "hum-or-sing",
+      "title": "Hum or sing",
+      "description": "One song, alone or with music.",
+      "category": "creative_expressive",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "play-instrument",
+      "title": "Play an instrument",
+      "description": "Even 5 minutes of scales or one tune.",
+      "category": "creative_expressive",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 15,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "collage-or-color",
+      "title": "Collage or color",
+      "description": "Magazine scraps or coloring page.",
+      "category": "creative_expressive",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 20,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "voice-memo-feelings",
+      "title": "Voice memo feelings",
+      "description": "Talk for 60 seconds; skip replay if that helps.",
+      "category": "creative_expressive",
+      "duration_min_minutes": 1,
+      "duration_max_minutes": 3,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "craft-micro-project",
+      "title": "Craft micro-project",
+      "description": "Fold paper, knit one row, LEGO for 10 minutes.",
+      "category": "creative_expressive",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 15,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "silly-dance",
+      "title": "Dance like nobody's watching",
+      "description": "Silly version \u2014 creature joins.",
+      "category": "creative_expressive",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "medium",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "text-someone-kind",
+      "title": "Text someone kind",
+      "description": "One genuine message.",
+      "category": "connection_care",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        },
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "thank-you-note",
+      "title": "Thank-you note",
+      "description": "Digital or paper, two sentences.",
+      "category": "connection_care",
+      "duration_min_minutes": 3,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "call-friend-family",
+      "title": "Call a friend or family",
+      "description": "5-minute check-in.",
+      "category": "connection_care",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "pet-an-animal",
+      "title": "Pet an animal",
+      "description": "Yours or visit a friend's pet mindfully.",
+      "category": "connection_care",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "self-compassion-phrase",
+      "title": "Self-compassion phrase",
+      "description": "Say aloud: This is hard; I'm doing my best.",
+      "category": "connection_care",
+      "duration_min_minutes": 1,
+      "duration_max_minutes": 2,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "boundary-micro-act",
+      "title": "Boundary micro-act",
+      "description": "Mute one channel, delay one reply, say no to one thing.",
+      "category": "connection_care",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 5,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "act-of-kindness",
+      "title": "Act of kindness",
+      "description": "Hold a door, compliment, small help.",
+      "category": "connection_care",
+      "duration_min_minutes": 2,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": true,
+      "mood_tags": [
+        {
+          "mood": "good_content",
+          "suitability": "suitable",
+          "weight": 8
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "power-nap",
+      "title": "Power nap",
+      "description": "10-20 minutes, timer on.",
+      "category": "rest_sensory",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 20,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "slug": "legs-up-wall",
+      "title": "Legs up the wall",
+      "description": "5-10 minutes, calm nervous system.",
+      "category": "rest_sensory",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "recommended",
+          "weight": 9
+        }
+      ]
+    },
+    {
+      "slug": "warm-shower-bath",
+      "title": "Warm shower or bath",
+      "description": "Focus on warmth and water sound.",
+      "category": "rest_sensory",
+      "duration_min_minutes": 10,
+      "duration_max_minutes": 20,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "slug": "tidy-one-surface",
+      "title": "Tidy one surface",
+      "description": "Clear desk or nightstand for mental space.",
+      "category": "rest_sensory",
+      "duration_min_minutes": 5,
+      "duration_max_minutes": 10,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 9
+        },
+        {
+          "mood": "neutral",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    },
+    {
+      "slug": "sleep-prep-ritual",
+      "title": "Sleep prep ritual",
+      "description": "Dim lights, no screens 15 minutes, same small sequence nightly.",
+      "category": "rest_sensory",
+      "duration_min_minutes": 15,
+      "duration_max_minutes": 20,
+      "energy_level": "low",
+      "indoor": true,
+      "outdoor": false,
+      "mood_tags": [
+        {
+          "mood": "low_tired",
+          "suitability": "recommended",
+          "weight": 10
+        },
+        {
+          "mood": "neutral",
+          "suitability": "recommended",
+          "weight": 8
+        },
+        {
+          "mood": "anxious",
+          "suitability": "suitable",
+          "weight": 7
+        }
+      ]
+    }
+  ]
+}

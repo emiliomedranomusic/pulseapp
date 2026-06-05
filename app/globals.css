@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+:root {
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-nunito: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: #fff8f0;
+  color: #1e192b;
+  font-family: var(--font-nunito);
+}
+
+.font-display,
+.font-headline-lg,
+.font-headline-md,
+.font-label-lg,
+.font-label-md {
+  font-family: var(--font-quicksand);
+}
+
+.soft-shadow {
+  box-shadow: 0 20px 40px -15px rgba(100, 85, 145, 0.08);
+}
+
+.soft-card {
+  box-shadow: 0 20px 40px -15px rgba(100, 85, 145, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soft-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 50px -20px rgba(100, 85, 145, 0.12);
+}
+
+.pressed-effect:active {
+  transform: scale(0.98);
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-bob {
+  animation: bob 2.5s ease-in-out infinite;
+}
+
+.mood-glow {
+  box-shadow: 0 0 0 4px rgba(203, 186, 253, 0.45), 0 8px 24px rgba(100, 85, 145, 0.12);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

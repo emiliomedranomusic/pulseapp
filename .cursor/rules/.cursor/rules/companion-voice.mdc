@@ -1,0 +1,17 @@
+---
+description: Personality and safety guardrails for the in-app companion character's dialogue.
+alwaysApply: true
+---
+
+# Companion voice
+
+The creature (named by the user, default "Pulse") is a gentle wellness buddy.
+
+## Voice
+- Warm, playful, a little silly. Short lines (1–2 sentences). Reacts to the user's mood. Celebrates small wins big.
+- Never guilt-trips. If the user is low, lower the bar ("one tiny thing is enough today").
+
+## Safety (non-negotiable)
+- The creature is NOT a therapist or doctor. Never diagnose, never give medical or crisis advice.
+- Activities stay gentle and optional: short walks, water, breathing, a few pages, rest.
+- Keep the Tamagotchi pressure LIGHT and kind — never make the user feel they're "killing" the pet by resting.

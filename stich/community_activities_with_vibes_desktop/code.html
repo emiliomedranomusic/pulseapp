@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pulse Wellness | Community Activities</title>
+<!-- Font Preloads -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#ffb59f",
+                    "primary-fixed": "#ffdbd1",
+                    "on-tertiary-fixed-variant": "#294e3f",
+                    "on-surface": "#1e192b",
+                    "on-primary-fixed": "#3a0a00",
+                    "inverse-primary": "#ffb59f",
+                    "surface-container": "#f3eaff",
+                    "on-tertiary-container": "#214638",
+                    "surface-variant": "#e8def8",
+                    "secondary": "#645591",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1e192b",
+                    "outline": "#89726b",
+                    "outline-variant": "#dcc0b9",
+                    "tertiary-fixed": "#c3ecd8",
+                    "error": "#ba1a1a",
+                    "primary-container": "#ff8c69",
+                    "on-error": "#ffffff",
+                    "surface": "#fdf7ff",
+                    "primary": "#9e4225",
+                    "on-secondary-container": "#564782",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dfd6ef",
+                    "surface-container-high": "#eee4fd",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#7e2b10",
+                    "inverse-surface": "#332d40",
+                    "secondary-container": "#cbbafd",
+                    "on-surface-variant": "#56423d",
+                    "tertiary-fixed-dim": "#a7cfbc",
+                    "tertiary-container": "#8db4a2",
+                    "tertiary": "#416656",
+                    "secondary-fixed-dim": "#cebdff",
+                    "on-primary-container": "#752409",
+                    "surface-container-low": "#f8f1ff",
+                    "on-secondary-fixed": "#200f49",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e8def8",
+                    "secondary-fixed": "#e8ddff",
+                    "inverse-on-surface": "#f6eeff",
+                    "surface-bright": "#fdf7ff",
+                    "surface-tint": "#9e4225",
+                    "background": "#fdf7ff",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#002116",
+                    "on-secondary-fixed-variant": "#4c3d77"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "20px",
+                    "stack-md": "24px",
+                    "margin-mobile": "24px",
+                    "base": "8px",
+                    "stack-lg": "48px",
+                    "margin-desktop": "64px",
+                    "stack-sm": "12px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Nunito Sans"],
+                    "headline-lg-mobile": ["Quicksand"],
+                    "label-md": ["Quicksand"],
+                    "display": ["Quicksand"],
+                    "body-md": ["Nunito Sans"],
+                    "label-lg": ["Quicksand"],
+                    "headline-md": ["Quicksand"],
+                    "headline-lg": ["Quicksand"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "display": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .deep-soft-shadow {
+        box-shadow: 0 20px 40px rgba(100, 85, 145, 0.08);
+      }
+      .hover-scale {
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .hover-scale:hover {
+        transform: translateY(-4px) scale(1.02);
+      }
+      body {
+        background-color: #fdf7ff;
+      }
+    </style>
+</head>
+<body class="font-body-md text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="w-full top-0 z-50 shadow-xl bg-surface dark:bg-surface-dim">
+<div class="max-w-[1200px] mx-auto px-margin-desktop h-24 flex items-center justify-between">
+<div class="flex items-center gap-12">
+<span class="font-display text-display text-primary dark:text-primary-fixed tracking-tight">Pulse</span>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-300" href="#">Community</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Practices</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Insights</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block group">
+<input class="bg-surface-container-low border-none rounded-full py-3 px-6 w-64 focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search activities..." type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-3 text-on-surface-variant">search</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="w-12 h-12 rounded-full flex items-center justify-center bg-surface-container hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-secondary">notifications</span>
+</button>
+<button class="w-12 h-12 rounded-full flex items-center justify-center bg-secondary-container hover:scale-105 transition-transform overflow-hidden">
+<span class="material-symbols-outlined text-on-secondary-fixed">account_circle</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-margin-desktop py-stack-lg space-y-stack-lg">
+<!-- Header Section -->
+<section class="space-y-stack-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-2">
+<h1 class="font-display text-display text-on-surface">Activities Near You</h1>
+<p class="font-body-lg text-on-surface-variant max-w-lg">Discover local gatherings that nurture your mind, body, and creative flow.</p>
+</div>
+</div>
+<!-- Category Filters -->
+<div class="flex flex-wrap items-center gap-3">
+<button class="px-6 py-3 rounded-full bg-primary text-on-primary font-label-lg shadow-md hover:scale-105 transition-transform">All</button>
+<button class="px-6 py-3 rounded-full bg-surface-container text-on-surface-variant font-label-lg hover:bg-secondary-container transition-colors">Coworking</button>
+<button class="px-6 py-3 rounded-full bg-surface-container text-on-surface-variant font-label-lg hover:bg-secondary-container transition-colors">Mindfulness</button>
+<button class="px-6 py-3 rounded-full bg-surface-container text-on-surface-variant font-label-lg hover:bg-secondary-container transition-colors">Coffee</button>
+<div class="ml-auto flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label-lg">Austin, TX</span>
+</div>
+</div>
+</section>
+<!-- Featured Activity -->
+<section>
+<div class="relative w-full h-[480px] rounded-xl overflow-hidden deep-soft-shadow group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A bright and airy coworking space filled with lush green indoor plants, natural wood furniture, and soft morning sunlight streaming through large windows. People are quietly working and sipping matcha in a serene, focused atmosphere with warm peach and cream tones throughout the decor. The overall mood is peaceful and productive, emphasizing wellness in a workspace environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCC91-6a5U-8oHZhg1Xw2TIr7rLIpUUmI5CP_xJ_K5Alx7HEjGW5ePzHXnMMDvN3wyQlXOMknUeW0HPqx7pCfBU0-UTipdbkpnsqvZ_ReQ1pJ0xKl4-280iTKYcaurCF6HfwDUT6f815xVQ8y512qWIcWpSoysx4j2CB6EBjSoBaQALh2_iou7BNjLnvzZ-CiF0z4RF8YRUbQOIl_GOXdHwhnBJySZtu39SNOeangEEGM0X-syWKJx6Cw2LK4ONjVKgUDLISd7PTTZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute top-8 left-8">
+<span class="px-4 py-2 rounded-full bg-primary-container text-on-primary-container font-label-lg flex items-center gap-2 shadow-lg">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                        Featured Activity
+                    </span>
+</div>
+<div class="absolute bottom-10 left-10 right-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="text-white space-y-3">
+<div class="flex items-center gap-4 font-label-lg uppercase tracking-wider text-primary-fixed">
+<span>Meetup</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+<span>Austin Central</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span><span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md normal-case tracking-normal">Vibe: Good/Content</span></div>
+<h2 class="font-display text-display text-white">Morning Co-working &amp; Matcha</h2>
+<div class="flex flex-wrap gap-6 text-white/90 font-body-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined">schedule</span>
+                                Tomorrow, 9:00 AM
+                            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined">near_me</span>
+                                0.8 miles away
+                            </div>
+</div>
+</div>
+<button class="h-14 px-10 bg-primary text-on-primary rounded-full font-label-lg shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+                        Join Session
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Activity Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Activity Card 1 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden deep-soft-shadow hover-scale flex flex-col">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A high-key, minimalist photograph of a person sitting in a silent meditation pose in a sunlit room with pale lavender walls and light oak floors. Soft, warm natural light creates gentle shadows. The aesthetic is clean and serene, reflecting a sense of absolute calm and mindfulness. Small organic textures like a linen cushion and a single green leaf in a ceramic vase are visible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS59lNW9zGiiuKDwVvMPMm6kRal5etFdSgmvvs4VmE907xt9LIKoiQOhFBuJdOFkWZxL3xLf-7M76Pnu_A0xX9kK66Fg9_oRANChLGEMrhw01l6Q8LxTqnOvI5Y-hqa9KjlA8Lpj3zo2f0ynoKrdjYbKL5gIWA-PfmcmzNugOAj8Stshe_rvekF0ItKRGNtISCKqEqacQLe-qqHUupVpBPoble8cKuNVIC3Q_aZs89PYzlWRCzQkMpFIDCbPYTXt1S9N4GhU1I6hHP"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-md">Luma</span>
+<span class="ml-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md">Neutral</span></div>
+</div>
+<div class="p-6 flex-grow space-y-4">
+<h3 class="font-headline-md text-on-surface">Silent Meditation</h3>
+<div class="space-y-2 font-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">event</span>
+                            Sat, Oct 12 • 7:30 AM
+                        </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+                            The Zen Space • 1.2 miles
+                        </div>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-surface-variant">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-primary-fixed border-2 border-white flex items-center justify-center text-[10px] font-bold">JD</div>
+<div class="w-8 h-8 rounded-full bg-secondary-fixed border-2 border-white flex items-center justify-center text-[10px] font-bold">MK</div>
+<div class="w-8 h-8 rounded-full bg-surface-dim border-2 border-white flex items-center justify-center text-[10px] font-bold">+12</div>
+</div>
+<button class="text-primary font-bold hover:underline">View Event</button>
+</div>
+</div>
+</div>
+<!-- Activity Card 2 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden deep-soft-shadow hover-scale flex flex-col">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A cozy, inviting café interior captured in soft focus with a warm, pastel-toned color palette. Steaming cups of latte art sit on rustic wooden tables surrounded by open laptops and notebooks. The environment suggests a collaborative and social atmosphere for digital nomads. The lighting is golden and soft, emphasizing a sense of community and creative comfort in a modern coffee shop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_nrNmaS38Iw7dljD9U8-a2peIX1K7FAD_46po5ihWSh-xen1Ilm4CDz2UH9rSMrYS0yEkG2zSxm6Mzhdng0IU9xLDXKVVxabrG5m08zW7486Hkbh2QkUdRjjG5x8ZTguoILwLpec2BGIcvoXmkdzMPh7WAn0lQK3OrC-LTZZf7e5cz5fWe03SLLuLpHKvwoM28_MR5945dkz3mRLlyZ1ewAaWEaCQhSnfTDlieSAHLFj3Uwimfj-cpW4yLjZoAIH4cQgSA4xaukhF"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md">Meetup</span>
+<span class="ml-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md">Good/Content</span></div>
+</div>
+<div class="p-6 flex-grow space-y-4">
+<h3 class="font-headline-md text-on-surface">Digital Nomad Coffee</h3>
+<div class="space-y-2 font-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">event</span>
+                            Monday • 10:00 AM
+                        </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+                            Roast &amp; Co • 0.5 miles
+                        </div>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-surface-variant">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-primary-container border-2 border-white flex items-center justify-center text-[10px] font-bold">RS</div>
+<div class="w-8 h-8 rounded-full bg-surface-variant border-2 border-white flex items-center justify-center text-[10px] font-bold">+24</div>
+</div>
+<button class="text-primary font-bold hover:underline">View Event</button>
+</div>
+</div>
+</div>
+<!-- Activity Card 3 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden deep-soft-shadow hover-scale flex flex-col">
+<div class="relative h-56 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A group of diverse, smiling young professionals engaged in a creative workshop. They are gathered around a table with colorful mood boards and design materials. The room is styled with soft minimalism, featuring pale peach accents and abundant natural light. The mood is encouraging, playful, and tactile, showcasing a high-end community event where learning and connection happen naturally." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_wsIaMwGBWqFh2Yk1EyDyKY7U25c7IDshwmxftcvSIi8gqqdMKVKZdlSVbd3ZAfRXChvghAbzuq-80jL3jb0E9i3VT7-uyx_tGXKh45wBAbQYNm3yEmlW-P10vlKkSfgigbfZRcLSo1k2DZIFjxzt0rI2qpvZhgy24iGZizWXlVgjl0pyzcHsA96W78BHWQVsOx4sLAP788gw7CZ-oXPFGY2SdlazDVQi7KzAdqdcaUBkHp5spvmFynUeLIuOXk7iRHLocvbM-oKI"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-md">Luma</span>
+<span class="ml-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md">Awesome</span></div>
+</div>
+<div class="p-6 flex-grow space-y-4">
+<h3 class="font-headline-md text-on-surface">Creative Flow Workshop</h3>
+<div class="space-y-2 font-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">event</span>
+                            Friday • 5:00 PM
+                        </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+                            Community Hub • 2.1 miles
+                        </div>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-surface-variant">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed border-2 border-white flex items-center justify-center text-[10px] font-bold">AL</div>
+<div class="w-8 h-8 rounded-full bg-surface-dim border-2 border-white flex items-center justify-center text-[10px] font-bold">+8</div>
+</div>
+<button class="text-primary font-bold hover:underline">View Event</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Call-to-Action -->
+<section>
+<div class="bg-secondary-container rounded-xl p-10 md:p-16 flex flex-col md:flex-row items-center gap-10 overflow-hidden relative">
+<!-- Decorative background elements -->
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-white/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="flex-grow space-y-6 z-10 text-center md:text-left">
+<h2 class="font-display text-display text-on-secondary-fixed">Have an idea for a gathering?</h2>
+<p class="font-body-lg text-on-secondary-fixed-variant max-w-xl">Host your own community activity and help others find their rhythm. Whether it’s a morning jog or a deep-work session, we've got you covered.</p>
+<button class="h-14 px-10 bg-on-secondary-fixed text-white rounded-full font-label-lg shadow-xl hover:scale-105 active:scale-95 transition-all">
+                        Create Activity
+                    </button>
+</div>
+<div class="w-full md:w-1/3 z-10">
+<div class="bg-surface rounded-lg p-6 deep-soft-shadow rotate-3">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">edit_square</span>
+</div>
+<div class="h-4 w-32 bg-surface-container rounded-full"></div>
+</div>
+<div class="space-y-2">
+<div class="h-3 w-full bg-surface-container-low rounded-full"></div>
+<div class="h-3 w-5/6 bg-surface-container-low rounded-full"></div>
+<div class="h-3 w-4/6 bg-surface-container-low rounded-full"></div>
+</div>
+<div class="mt-6 h-10 w-full bg-primary-container/40 rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-lg bg-surface-container-low dark:bg-surface-container-lowest mt-stack-lg">
+<div class="max-w-[1200px] mx-auto px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-base">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-display text-headline-md text-secondary">Pulse</span>
+<p class="font-label-lg text-on-surface-variant text-center md:text-left max-w-xs">
+                    © 2024 Pulse Wellness. Nurturing your daily rhythm.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-on-surface-variant font-label-lg hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-label-lg hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-label-lg hover:text-primary transition-colors" href="#">Help Center</a>
+<a class="text-on-surface-variant font-label-lg hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+<!-- FAB for quick action -->
+<div class="fixed bottom-8 right-8 z-50">
+<button class="w-16 h-16 rounded-full bg-primary-container text-on-primary-container shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-transform group">
+<span class="material-symbols-outlined text-[32px]">add</span>
+<span class="absolute right-full mr-4 px-4 py-2 bg-on-surface text-surface rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                Host Activity
+            </span>
+</button>
+</div>
+<script>
+        // Simple micro-interaction for filter buttons
+        const filterButtons = document.querySelectorAll('button[class*="rounded-full"]');
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (!btn.classList.contains('bg-primary')) {
+                    // This is just a UI demo, so we toggle styles visually
+                    filterButtons.forEach(b => {
+                        if (b.classList.contains('bg-primary')) {
+                            b.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+                            b.classList.add('bg-surface-container', 'text-on-surface-variant');
+                        }
+                    });
+                    btn.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+                    btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+</body></html>
